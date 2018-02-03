@@ -1,0 +1,23 @@
+{
+  "name": "react.ui.seed",
+  "version": "1.0.0",
+  "description": "The seed project for React App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cs1193/react.ui.seed.git"
+  },
+  "author": "Chandresh Rajkumar Manonmani <chandresh.rm@gmail.com> (http://chandreshrm.name)",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/cs1193/react.ui.seed/issues"
+  },
+  "homepage": "https://github.com/cs1193/react.ui.seed#readme",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  }
+}
