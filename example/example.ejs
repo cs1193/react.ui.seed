@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.styles.css[0] %>">
+    <script src="<%= htmlWebpackPlugin.files.chunks.vendor.entry %>"></script>
+  </head>
+  <body ng-app="example">
+    <div id="example"></div>
+    <script type="text/javascript">
+      var VERSION = '<%= htmlWebpackPlugin.options.version %>';
+      var PACKAGE_NAME = '<%= htmlWebpackPlugin.options.title %>';
+    </script>
+    <script type="text/javascript">
+      <!-- CONSTANTS -->
+    </script>
+    <script src="<%= htmlWebpackPlugin.files.chunks.scripts.entry %>"></script>
+  </body>
+</html>
