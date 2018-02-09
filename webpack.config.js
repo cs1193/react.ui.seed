@@ -55,6 +55,7 @@ const configuration = {
         loader: 'babel-loader',
         query: {
           presets: [
+            'stage-0',
             'es2017',
             'react',
             'flow',
@@ -77,7 +78,10 @@ const configuration = {
         }, {
           loader: 'resolve-url-loader'
         }, {
-          loader: 'postcss-loader'
+          loader: 'postcss-loader',
+          query: {
+            sourceMap: true
+          }
         }, {
           loader: 'sass-loader',
           query: {
