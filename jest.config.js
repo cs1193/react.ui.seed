@@ -1,6 +1,6 @@
 const configuration = {
   "testRegex": "./source/.*\\.spec\\.(js|jsx)",
-  "setupTestFrameworkScriptFile": "<rootDir>/global.js",
+  "setupTestFrameworkScriptFile": "<rootDir>/test/global.js",
   "coverageDirectory": "./test/coverage/",
 };
 
