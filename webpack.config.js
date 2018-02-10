@@ -13,6 +13,8 @@ const configuration = {
   context: __dirname,
   entry: {
     scripts: [
+      'react-hot-loader/patch',
+      'webpack-hot-middleware/client',
       './example/example.js'
     ],
     vendor: [
@@ -72,19 +74,19 @@ const configuration = {
         fallback: ['style-loader'],
         use: [{
           loader: 'css-loader',
-          query: {
+          options: {
             sourceMap: true
           }
         }, {
           loader: 'resolve-url-loader'
         }, {
           loader: 'postcss-loader',
-          query: {
+          options: {
             sourceMap: true
           }
         }, {
           loader: 'sass-loader',
-          query: {
+          options: {
             sourceMap: true
           }
         }]
@@ -121,7 +123,7 @@ const configuration = {
     new ExtractTextPlugin("[name]-[hash].css"),
     new webpack.optimize.CommonsChunkPlugin({
       names: ["vendor"],
-      filename:"[name].js",
+      filename: "[name]-[hash].js",
       minChunks: Infinity
     }),
     new HtmlWebpackPlugin({
@@ -135,8 +137,7 @@ const configuration = {
       title: PACKAGE.name
     }),
     new webpack.BannerPlugin(banner),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
+    new webpack.HotModuleReplacementPlugin()
   ]
 };
 
