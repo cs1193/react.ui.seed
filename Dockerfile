@@ -1,4 +1,4 @@
-FROM node:8.9.4
+FROM node:10.6.0
 
 MAINTAINER Chandresh Rajkumar Manonmani <chandresh.rm@gmail.com> <cs1193@gmail.com> (http://chandreshrm.name)
 

@@ -23,11 +23,8 @@
     "test": "test"
   },
   "dependencies": {
-    "animate.css": "3.6.1",
     "axios": "0.17.1",
-    "bootstrap": "4.0.0",
     "classnames": "2.2.5",
-    "font-awesome": "4.7.0",
     "gsap": "1.20.3",
     "immutable": "3.8.2",
     "moment": "2.20.1",
@@ -78,9 +75,9 @@
     "jest": "22.2.2",
     "jsdoc": "3.5.5",
     "json-loader": "0.5.7",
-    "node-sass": "4.7.2",
+    "node-sass": "^4.9.3",
     "null-loader": "0.1.1",
-    "nyc": "11.4.1",
+    "nyc": "^13.0.1",
     "postcss": "6.0.17",
     "postcss-cssnext": "3.1.0",
     "postcss-focus": "3.0.0",
@@ -100,7 +97,7 @@
     "sasslint": "0.0.10",
     "style-loader": "0.20.1",
     "webpack": "3.10.0",
-    "webpack-dashboard": "1.1.1",
+    "webpack-dashboard": "^2.0.0",
     "webpack-dev-middleware": "2.0.4",
     "webpack-hot-middleware": "2.21.0"
   }
